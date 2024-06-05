@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Drag and Drop</title>
+  </head>
+  <body>
+    <section class="carousel">
+      <div
+        class="carousel-items"
+        style="background-image: url('carousel1.jpg')"
+      ></div>
+      <div
+        class="carousel-items"
+        style="background-image: url('carousel2.jpg')"
+      ></div>
+    </section>
+
+    <div class="overlay">
+      <section class="app-container">
+        <h1>Upload Your Image</h1>
+        <label for="input-file" id="drop-area" class="dragAndDrop">
+          <input type="file" id="input-file" accept="image/*" hidden />
+          <p>Drag & Drop or <span id="browse">Click to Browse</span></p>
+        </label>
+      </section>
+      <section class="file-list">
+        <div class="img-view">
+          <div class="img-holder">
+            <img src="default.png" alt="test" class="image" />
+          </div>
+          <input type="text" class="description" placeholder="Description" />
+          <img src="check-mark.png" alt="ok" class="accept" />
+          <img src="cancel.png" alt="no" class="reject" />
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
