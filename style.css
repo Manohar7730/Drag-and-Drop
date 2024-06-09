@@ -139,6 +139,7 @@ html {
 .reject {
   height: auto;
   max-height: 30px;
+  cursor: pointer;
 }
 
 .img-holder {
